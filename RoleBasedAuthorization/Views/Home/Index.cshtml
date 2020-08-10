@@ -1,0 +1,15 @@
+﻿@model RoleBasedAuthorization.Models.RoleBasedAuthorizationMember
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>@Model.Mbr_Name</h1>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        @Html.ActionLink("使用者頁面", "About", "Home", new { @class = "btn btn-success" })
+    </div>
+    <div class="col-md-4">
+        @Html.ActionLink("管理者頁面", "Contact", "Home", new { @class = "btn btn-danger" })
+    </div>
+</div>
